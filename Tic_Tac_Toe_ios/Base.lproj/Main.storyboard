@@ -108,12 +108,33 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qk-Ot-WDQ">
+                                <rect key="frame" x="106" y="486" width="107" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5XZ-YK-T2D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="endGameLabel" destination="ple-i7-yDj" id="0pt-fs-waO"/>
                         <outlet property="nextMove" destination="hHU-cB-y1P" id="JK5-d5-et8"/>
+                        <outletCollection property="singleTiles" destination="lx8-9E-Aqk" collectionClass="NSMutableArray" id="sn0-rB-NIf"/>
+                        <outletCollection property="singleTiles" destination="hE3-ND-5hp" collectionClass="NSMutableArray" id="U1W-GO-ZnF"/>
+                        <outletCollection property="singleTiles" destination="P1J-yi-LDT" collectionClass="NSMutableArray" id="LmI-Y1-0bn"/>
+                        <outletCollection property="singleTiles" destination="Dfe-08-GjC" collectionClass="NSMutableArray" id="i7u-RK-X4H"/>
+                        <outletCollection property="singleTiles" destination="PPs-dK-AIg" collectionClass="NSMutableArray" id="dZh-lR-4nT"/>
+                        <outletCollection property="singleTiles" destination="OiX-vJ-Jqd" collectionClass="NSMutableArray" id="ZwN-5i-miW"/>
+                        <outletCollection property="singleTiles" destination="clI-Lu-Uud" collectionClass="NSMutableArray" id="vjp-TZ-3zu"/>
+                        <outletCollection property="singleTiles" destination="TTN-UT-OU7" collectionClass="NSMutableArray" id="oFp-ku-s4w"/>
+                        <outletCollection property="singleTiles" destination="sQf-Sy-cDN" collectionClass="NSMutableArray" id="2bn-2k-CIz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

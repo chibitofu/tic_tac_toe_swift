@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var endGameLabel: UILabel!
     
+    @IBOutlet var singleTiles: [UIButton]!
+    
     var playerMove: String = "x"
     
     var moves = 0
@@ -94,9 +96,27 @@ class ViewController: UIViewController {
                 print("Cannot make a move")
             }
         }
-        
-        print("\(sender.currentTitle)")
     }
 
+    @IBAction func resetButton(_ sender: UIButton) {
+        playerMove = "x"
+        
+        moves = 0
+        
+        winner = "none"
+        
+        movesO = []
+        
+        movesX = []
+        
+        nextMove.image = nil
+        
+        endGameLabel.text = ""
+        
+        for i in 0..<singleTiles.count {
+            singleTiles[i].setImage(nil, for: .normal)
+        }
+    }
+    
 }
 

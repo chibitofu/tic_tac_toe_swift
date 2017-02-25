@@ -26,9 +26,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx8-9E-Aqk">
-                                <rect key="frame" x="16" y="142" width="80" height="64"/>
+                                <rect key="frame" x="0.0" y="116" width="108" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross.png"/>
+                                <state key="normal" title="topLeft"/>
                                 <connections>
                                     <action selector="tile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRO-xA-QWt"/>
                                 </connections>
@@ -44,6 +44,5 @@
     </scenes>
     <resources>
         <image name="board.png" width="744" height="783"/>
-        <image name="cross.png" width="214" height="214"/>
     </resources>
 </document>

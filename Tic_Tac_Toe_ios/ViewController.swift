@@ -9,17 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    var playerMove: String = "x"
+    
+    @IBAction func tile(_ sender: UIButton) {
+        if playerMove == "x" {
+            print("\(playerMove)")
+            playerMove = "o"
+        } else {
+            print("\(playerMove)")
+            playerMove = "x"
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

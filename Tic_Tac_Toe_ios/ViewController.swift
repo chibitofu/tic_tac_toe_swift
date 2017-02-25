@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var nextMove: UIImageView!
+    
     var playerMove: String = "x"
+    
+    var moves = 0
     
     let tileX = UIImage(named: "cross.png")
     
@@ -21,27 +25,27 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tile(_ sender: UIButton) {
-        var tile: TileState?
-        
-        if sender.currentImage != nil {
+        if sender.currentImage == nil {
             switch playerMove {
             case "x":
                 sender.setImage((UIImage(named: "cross.png")), for: .normal)
-                tile = .move("x")
                 playerMove = "o"
+                moves += 1
+                nextMove.image = tileO
             case "o":
                 sender.setImage((UIImage(named: "nought.png")), for: .normal)
-                tile = .move("o")
                 playerMove = "x"
+                moves += 1
+                nextMove.image = tileX
             default:
                 print("Cannot make a move")
             }
         }
-        
-        if tile != nil {
-            print("\(tile)")
-        }
 
+        if moves == 9 {
+            nextMove.image = nil
+            print("Game Over")
+        }
     }
 
 }
